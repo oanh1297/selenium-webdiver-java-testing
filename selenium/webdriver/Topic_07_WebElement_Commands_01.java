@@ -173,7 +173,7 @@ public class Topic_07_WebElement_Commands_01 {
 
     @AfterClass
     public void afterClass() {
-        driver.quit();
+        //driver.quit();
     }
 
     public void sleepInseconds(long timeInsecond){
