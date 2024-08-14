@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class topic08TextboxTextarea {
+public class Topic_08_Textbox_Textarea {
     WebDriver driver;
     String projectPath = System.getProperty("user.dir");
     String osName = System.getProperty("os.name");
@@ -119,7 +119,7 @@ public class topic08TextboxTextarea {
         //Logout
         driver.findElement(By.cssSelector("a.skip-account")).click();
         sleepInseconds(2);
-        driver.findElement(By.cssSelector("a[title ='Logout']")).click();
+        driver.findElement(By.cssSelector("a[title ='Log Out']")).click();
 
         //Login
 
@@ -161,7 +161,7 @@ public class topic08TextboxTextarea {
 
     public String getEmailAddress() {
         Random rand = new Random();
-        return "automation" + rand.nextInt(99999) + "gmail.com";
+        return "automation" + rand.nextInt(99999) + "@gmail.com";
 
     }
 
